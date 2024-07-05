@@ -2947,6 +2947,108 @@
 				)
 			)
 		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "RF_Module:ESP32-WROOM-32E"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4728,6 +4830,12 @@
 		(uuid "32160461-db94-4a57-b51f-3903a56ef13b")
 	)
 	(junction
+		(at 135.89 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "34fbb072-abb3-45ab-b6f1-2c64b5de4474")
+	)
+	(junction
 		(at 124.46 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4828,6 +4936,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "83b7090f-48cb-42c5-a473-a90112650d53")
+	)
+	(junction
+		(at 144.78 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8ef9d4aa-6090-4938-ba33-0311c1dad927")
+	)
+	(junction
+		(at 127 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "90d50dfe-2265-4f37-a97c-687e1c495fa7")
 	)
 	(junction
 		(at 137.16 132.08)
@@ -4966,10 +5086,6 @@
 		(uuid "0e63bfd0-a9d4-42a6-bd1b-5aff8a66e356")
 	)
 	(no_connect
-		(at 257.81 88.9)
-		(uuid "1bfe40f8-5119-4a14-9f14-aa22b19610e7")
-	)
-	(no_connect
 		(at 142.24 128.27)
 		(uuid "31f27875-2bc5-464a-b8d6-37145a834e11")
 	)
@@ -4990,16 +5106,20 @@
 		(uuid "a97a3f7c-9d99-4401-b093-72eaf3bef4b9")
 	)
 	(no_connect
+		(at 257.81 96.52)
+		(uuid "ab73e700-9aaf-4667-a4d0-fb83e12f3e38")
+	)
+	(no_connect
 		(at 43.18 166.37)
 		(uuid "b8432251-b77c-4f8a-a5cf-f689216f2bb1")
 	)
 	(no_connect
-		(at 227.33 45.72)
-		(uuid "dd1584c0-f9f5-480f-ae07-8074aff2af19")
+		(at 257.81 93.98)
+		(uuid "c1989888-2141-4a07-b8d7-59c31ddda5a9")
 	)
 	(no_connect
-		(at 257.81 91.44)
-		(uuid "de30943d-920c-4689-8598-bbbcfd7349ff")
+		(at 227.33 45.72)
+		(uuid "dd1584c0-f9f5-480f-ae07-8074aff2af19")
 	)
 	(wire
 		(pts
@@ -5020,6 +5140,16 @@
 			(type default)
 		)
 		(uuid "00e8e89c-8a8e-4a7e-ae47-1b40c67bebc6")
+	)
+	(wire
+		(pts
+			(xy 162.56 181.61) (xy 162.56 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01d74644-155d-431e-9d83-50f627fdcaa2")
 	)
 	(wire
 		(pts
@@ -5243,6 +5373,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 184.15) (xy 135.89 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "164a4d01-fd51-413f-b642-49a10d817b5b")
+	)
+	(wire
+		(pts
 			(xy 257.81 78.74) (xy 261.62 78.74)
 		)
 		(stroke
@@ -5280,6 +5420,16 @@
 			(type default)
 		)
 		(uuid "1caa2a3f-fb75-44a5-a08b-8f8c74d3282a")
+	)
+	(wire
+		(pts
+			(xy 127 181.61) (xy 127 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f4d0928-dab4-4e93-9de2-b72fe0587ad0")
 	)
 	(wire
 		(pts
@@ -5693,6 +5843,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 91.44) (xy 261.62 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "473b5c75-4bbc-47fc-9a70-f6e5528fdbb7")
+	)
+	(wire
+		(pts
 			(xy 228.6 134.62) (xy 231.14 134.62)
 		)
 		(stroke
@@ -5863,6 +6023,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 181.61) (xy 144.78 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5991eb04-86ae-4313-b2e6-fbe1b7325548")
+	)
+	(wire
+		(pts
 			(xy 124.46 25.4) (xy 124.46 27.94)
 		)
 		(stroke
@@ -5950,6 +6120,16 @@
 			(type default)
 		)
 		(uuid "62698d5d-4042-4d1c-bf29-7ff78d1f2102")
+	)
+	(wire
+		(pts
+			(xy 127 184.15) (xy 135.89 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63847fff-d8ca-465a-b21b-0bce563b1c3c")
 	)
 	(wire
 		(pts
@@ -6060,6 +6240,16 @@
 			(type default)
 		)
 		(uuid "6ee4e0cb-f707-4aa3-a2c3-ca7661bf8058")
+	)
+	(wire
+		(pts
+			(xy 109.22 184.15) (xy 127 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f4e1a6a-f103-473d-8bee-a60ef16c3a05")
 	)
 	(wire
 		(pts
@@ -6233,16 +6423,6 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 96.52) (xy 261.62 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82fcdf48-3695-4f91-aed4-8ab48519ef7f")
-	)
-	(wire
-		(pts
 			(xy 215.9 137.16) (xy 231.14 137.16)
 		)
 		(stroke
@@ -6330,6 +6510,16 @@
 			(type default)
 		)
 		(uuid "8e2cead5-7a4f-4d4d-8558-ca8d986b6a18")
+	)
+	(wire
+		(pts
+			(xy 162.56 184.15) (xy 144.78 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e5c03e4-8179-4c2c-8a06-b3675f247ec5")
 	)
 	(wire
 		(pts
@@ -6633,6 +6823,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 88.9) (xy 261.62 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5252d9e-5a62-472f-a013-6c05dcd69b37")
+	)
+	(wire
+		(pts
 			(xy 215.9 142.24) (xy 215.9 146.05)
 		)
 		(stroke
@@ -6813,16 +7013,6 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 93.98) (xy 261.62 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8ab2a50-2962-48ad-9ad9-1222b9e85713")
-	)
-	(wire
-		(pts
 			(xy 83.82 144.78) (xy 93.98 144.78)
 		)
 		(stroke
@@ -6973,6 +7163,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 184.15) (xy 135.89 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd34e8e6-f053-4c32-afef-9086dbd0aa1b")
+	)
+	(wire
+		(pts
 			(xy 213.36 68.58) (xy 213.36 69.85)
 		)
 		(stroke
@@ -7090,6 +7290,16 @@
 			(type default)
 		)
 		(uuid "e9ea7c77-bd29-448a-8691-137133ef0a41")
+	)
+	(wire
+		(pts
+			(xy 109.22 181.61) (xy 109.22 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9efaa3c-32ae-44e9-8a10-73d983974900")
 	)
 	(wire
 		(pts
@@ -7584,6 +7794,17 @@
 		)
 		(uuid "cd16b8ce-8ee4-4cd6-ac3d-ec9b58e54de6")
 	)
+	(label "OLED_SDA"
+		(at 261.62 88.9 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "146f05cd-4774-4e9d-b938-5b19dbb2d649")
+	)
 	(label "SD_DATA1"
 		(at 261.62 48.26 0)
 		(fields_autoplaced yes)
@@ -7660,6 +7881,17 @@
 			(justify right bottom)
 		)
 		(uuid "473d5697-08c8-4b4b-86fd-ca681494f583")
+	)
+	(label "OLED_SCL"
+		(at 261.62 91.44 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "492b3ba0-4bf7-443d-b031-c92d1c7aec6b")
 	)
 	(label "RX0"
 		(at 261.62 45.72 0)
@@ -7837,17 +8069,6 @@
 		)
 		(uuid "88909c35-6cb1-497f-8770-aa9ef295a433")
 	)
-	(label "OLED_SCL"
-		(at 261.62 96.52 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8913c700-2f08-45c7-9998-aa32dac621b3")
-	)
 	(label "SD_DATA2"
 		(at 261.62 53.34 0)
 		(fields_autoplaced yes)
@@ -7913,17 +8134,6 @@
 			(justify left bottom)
 		)
 		(uuid "aeec1096-5388-4f01-b2c8-adca22083ccb")
-	)
-	(label "OLED_SDA"
-		(at 261.62 93.98 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b0ece803-c680-4890-a748-39bc62b34b89")
 	)
 	(label "SW_HOLD"
 		(at 261.62 68.58 0)
@@ -8107,6 +8317,72 @@
 			(project ""
 				(path "/744b71e5-7f4a-4889-8f99-6a829c20771b"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 162.56 179.07 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "095f938d-f611-45e3-85c0-dfbd7f581648")
+		(property "Reference" "H4"
+			(at 154.94 171.704 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 154.94 174.244 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
+			(at 162.56 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 162.56 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7e529c20-edf2-4657-a69d-a10b699e95ca")
+		)
+		(instances
+			(project "ESP32-MP3-Player"
+				(path "/744b71e5-7f4a-4889-8f99-6a829c20771b"
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -9002,6 +9278,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 109.22 179.07 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "57db85aa-abc5-4000-ae1c-3e18b2625e7a")
+		(property "Reference" "H1"
+			(at 101.6 171.704 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 101.6 174.244 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
+			(at 109.22 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 109.22 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 109.22 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aa11b9fd-30a7-479d-88fa-da637bb0b559")
+		)
+		(instances
+			(project ""
+				(path "/744b71e5-7f4a-4889-8f99-6a829c20771b"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:RotaryEncoder_Switch")
 		(at 102.87 130.81 0)
 		(unit 1)
@@ -9343,6 +9685,72 @@
 			(project ""
 				(path "/744b71e5-7f4a-4889-8f99-6a829c20771b"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 144.78 179.07 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "6f491914-1ae6-45a2-b442-1ce0fc5534ae")
+		(property "Reference" "H3"
+			(at 137.16 171.704 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 137.16 174.244 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
+			(at 144.78 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 144.78 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "00ef24b8-a948-43cf-a51e-a007c2363a06")
+		)
+		(instances
+			(project "ESP32-MP3-Player"
+				(path "/744b71e5-7f4a-4889-8f99-6a829c20771b"
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -10871,6 +11279,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 135.89 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bad0d80c-4529-4eb3-88fa-245fdea8fb65")
+		(property "Reference" "#PWR015"
+			(at 135.89 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 135.89 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 135.89 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8e076bd2-d215-479f-81f0-50543a269b3b")
+		)
+		(instances
+			(project ""
+				(path "/744b71e5-7f4a-4889-8f99-6a829c20771b"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 217.17 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11631,6 +12105,72 @@
 			(project ""
 				(path "/744b71e5-7f4a-4889-8f99-6a829c20771b"
 					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 127 179.07 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "d25b497c-5f4c-44f0-a413-380a79439a6c")
+		(property "Reference" "H2"
+			(at 119.38 171.704 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 119.38 174.244 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
+			(at 127 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 127 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "76db662c-fcff-4251-9df3-824a3ad57180")
+		)
+		(instances
+			(project "ESP32-MP3-Player"
+				(path "/744b71e5-7f4a-4889-8f99-6a829c20771b"
+					(reference "H2")
 					(unit 1)
 				)
 			)
